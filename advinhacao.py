@@ -1,8 +1,10 @@
+import random
+
 print('********************************')
 print('Bem vindo ao jogo de Advinhação!')
 print('********************************')
 
-numero_secreto = 42
+numero_secreto = round(random.random() * 100)
 total_de_tentativas = 3
 rodada = 1
 ainda_joga = rodada < total_de_tentativas
@@ -19,6 +21,7 @@ while(ainda_joga):
 
     if(acertou):
         print('Você acertou!!')
+        break
     else:
         print('Você errou!', end=" ")
         if(menor):
