@@ -32,4 +32,5 @@ while(ainda_joga):
     rodada += 1
     ainda_joga = rodada <= total_de_tentativas
 
+print('O Segredo era: {:d}'.format(numero_secreto))
 print('Fim de Jogo!!')
